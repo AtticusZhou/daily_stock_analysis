@@ -331,6 +331,10 @@ jobs:
           TELEGRAM_MESSAGE_THREAD_ID: ${{ secrets.TELEGRAM_MESSAGE_THREAD_ID }}
           
           # 方式四：邮件
+          STOCK_GROUP_1: ${{ vars.STOCK_GROUP_1 }}
+          EMAIL_GROUP_1: ${{ vars.EMAIL_GROUP_1 }}
+          STOCK_GROUP_2: ${{ vars.STOCK_GROUP_2 }}
+          EMAIL_GROUP_2: ${{ vars.EMAIL_GROUP_2 }}
           EMAIL_SENDER: ${{ vars.EMAIL_SENDER || secrets.EMAIL_SENDER }}
           EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
           EMAIL_RECEIVERS: ${{ vars.EMAIL_RECEIVERS || secrets.EMAIL_RECEIVERS }}
